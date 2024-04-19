@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Redactor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>REDACTR</h1>
+        <p>...scramble some words from a body of text content</p>
+        <div class="main">
+            <span>
+                <label for="">Enter your content:</label><br>
+                <div class="text">
+                    <input type="text" id="originalText" placeholder="Enter your text here">
+                </div>
+            </span>
+            <br><br>
+            <span >
+                <label for="">Words to be redacted(separated by spaces):</label><br>
+                <div class="text">
+                    <input type="text" id="wordsToRedact" placeholder="Words to redact (separated by space)">
+                </div>
+            </span>
+            <br><br>
+    
+            <span>
+                <label>Choose a replacement:</label'>
+                
+                <div class="text">
+                    <select id="replacement">
+                        <option value="****">Default</option>
+                        <option value="?">Question Mark</option>
+                        <option value="-">Hyphen</option>
+                        <option value="*">Under Asteris</option>
+                        <option value="Custom">Custom Word (e.g "REDACTED)</option>
+                    </select><br>
+                    <input type="text" id="customReplacement" placeholder="Custom Replacement" style="display: none;">
+                </div><br>
+            </span>
+    
+            <div class="text">
+                <button onclick="redactText()">Redact Now</button><br><br>
+                <button class="but1" onclick="resetForm()">Reset Form</button>
+            </div>
+
+            <h2>REDACTED CONTENT</h2>
+            <div class="status">
+                <div id="redactedText"></div>
+                <h4>STATUS:</h4>
+                <div id="stats"></div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
