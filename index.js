@@ -1,7 +1,7 @@
 function redactText() {
     const originalText = document.getElementById('originalText').value;
     const wordsToRedact = document.getElementById('wordsToRedact').value.split(" ");
-    const replacement = getReplacement();
+    const replacement = getReplacement()
 
     const regex = new RegExp(wordsToRedact.join('|'), 'gi');
     const redactedText = originalText.replace(regex, match => replacement.repeat(match.length));
