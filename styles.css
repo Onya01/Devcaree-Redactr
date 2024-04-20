@@ -73,7 +73,7 @@ button:hover {
 #redactedText {
     margin-top: 20px;
     font-weight: bold;
-    color: aquamarine;
+    color: blueviolet;
 }
 
 /* .main {
@@ -91,5 +91,5 @@ button:hover {
 
 #stats {
     margin-top: 20px;
-    color: aquamarine;
+    color: blueviolet;
 }
